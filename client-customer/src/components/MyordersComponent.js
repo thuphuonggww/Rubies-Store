@@ -28,7 +28,7 @@ class Myorders extends Component {
           <td>{new Date(item.cdate).toLocaleString()}</td>
           <td>{item.customer.name}</td>
           <td>{item.customer.phone}</td>
-          <td>{item.total}.000đ</td>
+          <td>{item.total}.000 VND</td>
           <td>{item.status}</td>
         </tr>
       );
@@ -45,7 +45,7 @@ class Myorders extends Component {
             <td>
               <img src={"data:image/jpg;base64," + item.product.image} alt="" />
             </td>
-            <td>{item.product.price}.000đ</td>
+            <td>{item.product.price}.000 VND</td>
             <td>{item.quantity}</td>
             <td>{item.product.price * item.quantity}</td>
           </tr>
