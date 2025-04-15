@@ -20,9 +20,9 @@ class Mycart extends Component {
           <td>
             <img src={"data:image/jpg;base64," + item.product.image} alt="" />
           </td>
-          <td>{item.product.price}.000đ</td>
+          <td>{item.product.price}.000</td>
           <td>{item.quantity}</td>
-          <td>{item.product.price * item.quantity}</td>
+          <td>{item.product.price * item.quantity}.000</td>
           <td>
             <span
               className="mycart-action"
@@ -57,7 +57,7 @@ class Mycart extends Component {
             <tr>
               <td colSpan="6"></td>
               <td className="mycart-total">Total</td>
-              <td>{CartUtil.getTotal(this.context.mycart)}</td>
+              <td>{CartUtil.getTotal(this.context.mycart)}.000 VND</td>
               <td>
                 <span
                   className="mycart-action"
